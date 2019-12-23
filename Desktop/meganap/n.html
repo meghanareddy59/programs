@@ -1,0 +1,71 @@
+<html>
+    <head>
+    <style>
+        body{
+        background-color: rosybrown;
+        }
+    
+.card
+{ 
+    
+
+    background-color:rgb(11, 134, 42);
+   padding:50px;
+   border-radius:70px;
+   width:50%;
+   margin-top: 10px;
+}
+img{
+    width:100px;
+    border-radius:50%;
+    
+    }
+h1,h2{
+    font-size:15px;
+    color:wheat;
+    font-family:arial;
+    
+}
+button{
+    color:red;
+    float:right;
+}
+
+
+@media(max-width: 1400px)
+{
+#root{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+}
+
+@media(max-width: 700px)
+{
+#root{
+    
+    grid-template-columns:repeat(2,1fr);
+background-color:orange ;
+}
+}
+@media(max-width: 400px)
+{
+#root{
+
+    grid-template-columns:repeat(1,1fr);
+    background-color:rgb(0, 255, 76) ;
+}
+}
+
+    </style>
+</head>
+<body onload="load()">
+
+<div id="root"></div>
+<script src= m.js></script>
+<script src= m1.js></script>
+<button type="button" onclick="load()" >loadmore</button>
+</body>
+</html>
